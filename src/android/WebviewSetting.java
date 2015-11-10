@@ -20,7 +20,7 @@ public class WebviewSetting extends CordovaPlugin {
         WebView webView = (WebView) engine.getView();
         webView.setInitialScale(1);
         //webView.getSettings().setLoadWithOverviewMode(true);
-        //webView.getSettings().setUseWideViewPort(true);
+        webView.getSettings().setUseWideViewPort(true);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
             webView.getSettings().setMediaPlaybackRequiresUserGesture(false);
         }
