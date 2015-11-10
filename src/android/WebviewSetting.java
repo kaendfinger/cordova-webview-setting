@@ -18,6 +18,7 @@ public class WebviewSetting extends CordovaPlugin {
         CordovaWebViewImpl webViewImpl = (CordovaWebViewImpl) wv;
         SystemWebViewEngine engine = (SystemWebViewEngine) webViewImpl.getEngine();
         WebView webView = (WebView) engine.getView();
+        webView.setInitialScale(1);
         //webView.getSettings().setLoadWithOverviewMode(true);
         //webView.getSettings().setUseWideViewPort(true);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
