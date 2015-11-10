@@ -19,6 +19,8 @@ public class WebviewSetting extends CordovaPlugin {
         SystemWebViewEngine engine = (SystemWebViewEngine) webViewImpl.getEngine();
         WebView webView = (WebView) engine.getView();
         webView.setInitialScale(1);
+        System.out.println("CORDOVA USING WIDE VIEWPORT");
+        webView.getSettings().setUserAgentString("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36");
         //webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(true);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
