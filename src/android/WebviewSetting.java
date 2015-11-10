@@ -1,13 +1,12 @@
 package com.darktalker.cordova.webviewsetting;
 
-import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.CordovaWebView;
-import org.apache.cordova.CordovaInterface;
-import org.apache.cordova.CallbackContext;
+import org.apache.cordova.*;
+import org.apache.cordova.engine.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 
 import android.os.Build;
+import android.webkit.*;
 
 import android.util.Log;
 
